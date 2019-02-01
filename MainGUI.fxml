@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDropped="#on_drag_dropped" onDragEntered="#on_drag_entered" onDragExited="#on_drag_exited" onDragOver="#on_drag_over" onMouseDragged="#on_mouse_dragged" onMousePressed="#on_mouse_pressed" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: lightgray; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainGUI">
+   <children>
+      <Label fx:id="inform_label" layoutX="148.0" layoutY="194.0" prefHeight="113.0" prefWidth="204.0" text="Drag or drop&#10;image or dna file here" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Times New Roman" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="processed_image_view" fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fx:id="source_image_view" fitHeight="101.0" fitWidth="101.0" pickOnBounds="true" />
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
